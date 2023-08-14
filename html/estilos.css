@@ -1,0 +1,72 @@
+body {
+    background-image: url(Backgraund.jpg);
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+h1 {
+    color: rgb(182, 125, 1);
+    font-size: 60px;
+    font-family: Helvetica, Arial, sans-serif;
+    position: relative;
+    background-color: rgb(37, 1, 121);
+    top: -50px;
+    left: -9px;
+}
+
+.aventuratxt {
+    color: rgb(211, 248, 2);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+}
+
+h2 {
+    color: rgb(182, 125, 1);
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.color {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.centrado {
+    text-align: center;
+}
+
+.boton {
+    display: inline-block;
+    width: 110px;
+    padding: 10px;
+    background-color: #3700ff;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    margin: 10px; 
+}
+
+.boton_volver {
+    display: inline-block;
+    width: 110px;
+    padding: 10px;
+    background-color: #9102d4;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+}
