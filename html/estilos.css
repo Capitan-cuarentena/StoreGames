@@ -3,6 +3,8 @@ body {
     margin: -30; 
     padding: 30px; 
     font-family: Arial, sans-serif; 
+    background-position: center;
+    background-size: cover;
 }
 
 h1 {
