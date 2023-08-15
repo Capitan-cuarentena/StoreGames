@@ -1,7 +1,7 @@
 body {
     background-image: url(Backgraund.jpg);
-    margin: 0; 
-    padding: 0; 
+    margin: -30; 
+    padding: 30px; 
     font-family: Arial, sans-serif; 
 }
 
@@ -13,22 +13,61 @@ h1 {
     background-color: rgb(37, 1, 121);
     top: -50px;
     left: -9px;
+    padding-left: 10px;
 }
 
-.aventuratxt {
-    color: rgb(211, 248, 2);
+.txt {
+    color: rgb(0, 255, 64);
     text-align: center;
     font-size: 400%;
     font-family: Helvetica, Arial, sans-serif;
     margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+
+.txtaventura {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+
+.txtcarrera {
+    color: rgb(255, 0, 106);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+
+.txtdeporte {
+    color: rgb(255, 153, 0);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+
+.txtrol {
+    color: rgb(0, 204, 255);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
 }
 
 h2 {
-    color: rgb(182, 125, 1);
+    color: rgb(13, 2, 121);
     font-size: 400%;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center; 
     margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
 }
 
 .color {
@@ -37,6 +76,7 @@ h2 {
     font-family: Arial, sans-serif;
     text-align: center; 
     margin: 20px 0; 
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
 }
 
 .centrado {
@@ -69,4 +109,34 @@ h2 {
     position: fixed; 
     bottom: 20px; 
     right: 20px; 
+}
+
+.games{
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameSpacing{
+    margin-right: 30px;
+}
+
+img{
+    width: auto;
+    height: 250px;
+}
+
+.gametxt {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 24px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-align: justify;
 }
