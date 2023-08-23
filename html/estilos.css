@@ -1,36 +1,21 @@
 body {
-    background-image: url(/img/Backgraund.jpg);
-    margin: 0; 
+    background-image: url(Backgraund.jpg);
+    margin: -30; 
+    padding: 30px; 
     font-family: Arial, sans-serif; 
     background-position: center;
     background-size: cover;
 }
 
-header{
-    display: flex;
-    height: 70px;
-    background-color: #3700ff;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    text-decoration: none;
+h1 {
     color: rgb(182, 125, 1);
+    font-size: 60px;
     font-family: Helvetica, Arial, sans-serif;
-}
-
-.registro{
-    text-decoration: none;
-    color: rgb(182, 125, 1);
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    padding-right: 10px;
-    font-weight: 600;
+    position: relative;
+    background-color: rgb(37, 1, 121);
+    top: -50px;
+    left: -9px;
+    padding-left: 10px;
 }
 
 .txt {
@@ -79,12 +64,12 @@ header{
 }
 
 h2 {
-    color: rgb(255, 94, 0);
+    color: rgb(13, 2, 121);
     font-size: 400%;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center; 
     margin: 20px 0; 
-    -webkit-text-stroke: 3px rgb(255, 94, 0);
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
 }
 
 .color {
@@ -102,7 +87,7 @@ h2 {
 
 .boton {
     display: inline-block;
-    width: 130px;
+    width: 110px;
     padding: 10px;
     background-color: #3700ff;
     color: rgb(255, 255, 255);
@@ -156,65 +141,4 @@ img{
     margin: 20px 0; 
     -webkit-text-stroke: 1px rgb(255, 255, 255);
     text-align: justify;
-}
-
-
-
-.form-control {
-    font-size: 28px; 
-}
-
-.form-control:focus{
-    border-color: transparent !important;
-    box-shadow: none !important;
-}
-
-.formulario__grupo-incorrecto .form-control{
-    border: 2px solid red !important;
-}
-
-.formulario__grupo-correcto .form-control{
-    border: 2px solid green !important;
-}
-
-.formulario__grupo-incorrecto .form-control__error-txt{
-    font-size: 16px;
-    color: red;
-    font-weight: 600;
-}
-
-.label-nombre {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    line-height: 1;
-    -webkit-text-stroke: 1px rgb(253, 253, 253);
-}
-
-.boton-enviar {
-    font-size: 25px; 
-    padding: 10px 20px; 
-}
-
-
-.input-ancho {
-    width: 30%;
-    margin-bottom: 30px;
-    display: flex;
-}
-
-.formulario__mensaje-exito{
-    font-size: 16px;
-    color: green;
-    font-weight: 600;
-}
-
-.formulario__mensaje-error{
-    font-size: 16px;
-    color: red;
-    font-weight: 600;
-}
-
-.txtregistro{
-    font-size: 30px;
-    color: rgb(182, 125, 1);
 }
