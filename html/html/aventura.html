@@ -4,41 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Games | AVENTURA</title>
-    <link rel="stylesheet"href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    
     <header>
-        <a href=../index.html class="logo">
-            <h1 class = "store">Store Games</h1>
+        <a href="../index.html" class="logo">
+            <h1 class="store">Store Games</h1>
         </a>
         <nav>
+            <a href="/html/login.html" class="registro">Inicio De Sesión</a>
             <a href="registro.html" class="registro">Registro</a>
         </nav>
     </header>
 
     <h2 class="txtaventura">AVENTURA</h2>
 
-    <div class="games">
-        <div class="game gameSpacing">
-            <img src="/img/tomraider.jpg"  alt="adventure camp">
-            <p class="gametxt">Tom raider</p>
-            <p class="gametxt">Tomb Raider relata los intensos y conflictivos orígenes de Lara Croft y
-                su transformación de joven asustadiza a endurecida superviviente. Lara, que solo cuenta con
-                sus instintos y su habilidad para superar los límites de la resistencia humana, tendrá que aclarar
-                la historia tenebrosa de una isla olvidada para escapar de su acoso implacable. Descárgate el
-                tráiler Turning Point para ver el comienzo de la aventura legendaria de Lara.
-            </p>
-        </div>
-        <div class="game">
-            <img src="/img/thewitcher.jpg" alt="adventure camp">
-            <p class="gametxt">The Witcher</p>
-            <p class="gametxt">The Witcher Adventure Game es una adaptación digital del juego de mesa de CD PROJEKT RED 
-                ambientado en el brutal universo de fantasía del cazador de monstruos Geralt de Rivia.
-                Recorre el mundo de The Witcher, recreado a la perfección, y completa una serie de misiones,
-                como dar caza a bestias mortíferas, resolver misterios ancestrales y mucho más.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="game gameSpacing">
+                    <img src="/img/tomraider.jpg" alt="adventure camp">
+                    <p class="gametxt">Tom Raider</p>
+                    <p class="gametxt">Tomb Raider relata los intensos y conflictivos orígenes de Lara Croft y
+                        su transformación de joven asustadiza a endurecida superviviente. Lara, que solo cuenta con
+                        sus instintos y su habilidad para superar los límites de la resistencia humana, tendrá que aclarar
+                        la historia tenebrosa de una isla olvidada para escapar de su acoso implacable. Descárgate el
+                        tráiler Turning Point para ver el comienzo de la aventura legendaria de Lara.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="game">
+                    <img src="/img/thewitcher.jpg" alt="adventure camp">
+                    <p class="gametxt">The Witcher</p>
+                    <p class="gametxt">The Witcher Adventure Game es una adaptación digital del juego de mesa de CD PROJEKT RED 
+                        ambientado en el brutal universo de fantasía del cazador de monstruos Geralt de Rivia.
+                        Recorre el mundo de The Witcher, recreado a la perfección, y completa una serie de misiones,
+                        como dar caza a bestias mortíferas, resolver misterios ancestrales y mucho más.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+
     <a href="/index.html" class="boton_volver">BACK</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 </html>
