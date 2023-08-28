@@ -9,3 +9,5 @@ btnLogin.addEventListener('click',event => {
         alert("Completa todos los datos");
     }
 });
+
+
