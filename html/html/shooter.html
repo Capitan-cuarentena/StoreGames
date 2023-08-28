@@ -9,44 +9,60 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
+
     <header>
-        <a href="../index.html" class="logo">
-            <h1 class="store">Store Games</h1>
-        </a>
-        <nav>
-            <a href="/html/login.html" class="registro">Inicio De Sesión</a>
-            <a href="registro.html" class="registro">Registro</a>
-        </nav>
-    </header>
-
-    <h2 class="txt">SHOOTER</h2>
-
-    <div class="games">
-        <div class="game gameSpacing">
-            <img src="/img/mw2.jpg" alt="adventure camp">
-            <p class="gametxt">Call of Duty: Modern Warfare 2</p>
-            <p class="gametxt">
-                En Call of Duty®: Modern Warfare® II, los jugadores se verán inmersos en un conflicto
-                a escala global sin precedentes que incluye el regreso de Operadores icónicos de la fuerza operativa 141.
-                Desde operaciones tácticas de infiltración a pequeña escala hasta misiones altamente secretas, 
-                los jugadores se desplegarán con amigos en una experiencia inmersiva.
-            </p>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-8 col-sm-8 col-md-3">
+              <a href="../index.html" class="logo">
+                <h1>Store Games</h1>
+              </a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-9">
+              <nav class="text-end">
+                <a href="/html/login.html" class="registro">Inicio De Sesión</a>
+                <a href="registro.html" class="registro">Registro</a>
+              </nav>
+            </div>
+          </div>
         </div>
-        <div class="game">
-            <img src="/img/cs2.jpg" alt="adventure camp">
-            <p class="gametxt">Counter Strike 2</p>
-            <p class="gametxt">
-                Counter‑Strike 2 es el avance técnico más importante en la historia de Counter‑Strike y nos permitirá seguir 
-                incorporando características y actualizaciones durante muchos años. Este verano, cuando salga oficialmente, 
-                desvelaremos todas las nuevas características del juego, pero el camino hacia Counter‑Strike 2 empieza hoy con la prueba limitada,
-                disponible para una selección de jugadores de CS:GO.
-            </p>
+      </header>
+
+    <div class="container">
+        <h2 class="txt text-center mt-5">SHOOTER</h2>
+
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <div class="game gameSpacing">
+                    <img src="/img/mw2.jpg" alt="adventure camp" class="img-fluid">
+                    <p class="gametxt">Call of Duty: Modern Warfare 2</p>
+                    <p class="gametxt">
+                        En Call of Duty®: Modern Warfare® II, los jugadores se verán inmersos en un conflicto
+                        a escala global sin precedentes que incluye el regreso de Operadores icónicos de la fuerza operativa 141.
+                        Desde operaciones tácticas de infiltración a pequeña escala hasta misiones altamente secretas, 
+                        los jugadores se desplegarán con amigos en una experiencia inmersiva.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="game">
+                    <img src="/img/cs2.jpg" alt="adventure camp" class="img-fluid">
+                    <p class="gametxt">Counter Strike 2</p>
+                    <p class="gametxt">
+                        Counter‑Strike 2 es el avance técnico más importante en la historia de Counter‑Strike y nos permitirá seguir 
+                        incorporando características y actualizaciones durante muchos años. Este verano, cuando salga oficialmente, 
+                        desvelaremos todas las nuevas características del juego, pero el camino hacia Counter‑Strike 2 empieza hoy con la prueba limitada,
+                        disponible para una selección de jugadores de CS:GO.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <a href="/index.html" class="boton_volver">BACK</a>
+    <a href="/index.html" class="boton_volver d-block text-center mt-4">BACK</a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
 </html>
+

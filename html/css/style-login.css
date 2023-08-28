@@ -1,7 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40400%3B500&display=swap%27%29%3B);
 body{
-    font-family:'Poppins',sans-serif;
-    background-image:url(/img/Backgraund.jpg);
+    background-image: url(/img/Backgraund.jpg);
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .box-area{
