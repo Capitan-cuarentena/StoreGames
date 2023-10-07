@@ -2,7 +2,7 @@ asgiref==3.7.2
 certifi==2023.7.22
 charset-normalizer==3.2.0
 cx-Oracle==8.3.0
-Django>=3.2
+Django==2.2.28
 django-filter==2.4.0
 django-recaptcha==3.0.0
 django-simplecaptcha==2.0.0
