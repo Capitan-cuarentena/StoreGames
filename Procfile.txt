@@ -1,1 +1,1 @@
-web: gunicorn duoc.wsgi
+web: gunicorn ProjectDjango-francobranch.wsgi:application
