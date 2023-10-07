@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7b5#%wqaamxb58vg1a_%zp7j=1833c&h!zul^+1^rhl@u1yz7!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
 AUTH_USER_MODEL = 'StoreGames.Usuario'
 
 
@@ -63,6 +63,9 @@ MIDDLEWARE = [
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+ALLOWED_HOSTS = ['duoc-06d1c1f351c9.herokuapp.com', ...]
 
 
 ROOT_URLCONF = 'ProjectDjango.urls'
