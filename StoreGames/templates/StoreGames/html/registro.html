@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Cargo static de py -->
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Store Games | REGISTRO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'StoreGames/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar-bg">
+  <div class="container">
+      <a class="navbar-brand" href="{% url 'index' %}">
+          <h1 class="logo">Store Games</h1>
+      </a>
+      <!-- Botón para dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Contenido del Navbar -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link registro" href="{% url 'aventura' %}">Aventura</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link registro" href="{% url 'shooter' %}">Shooter</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link registro" href="{% url 'carreras' %}">Carreras</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link registro" href="{% url 'deportes' %}">Deportes</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link registro" href="{% url 'rol' %}">Rol</a>
+              </li>
+          </ul>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link registro" href="{% url 'loginc' %}">Inicio de Sesión</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link registro" href="{% url 'registro' %}">Registro</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <h1 class="txtregistro">Registro</h1>
+            </div>
+            <form method="post" action="{% url 'registrar_usuario' %}" id="formulario1">
+                {% csrf_token %}
+                
+                <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="errorModalLabel">Error de Registro</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="error_message"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="mb-3 grupo__all" id="grupo__nombre">
+                    <label class="form-label label-nombre" for="nombre">Nombre</label>
+                    <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"
+                        required>
+                    <p class="form-control__error-txt d-none mt-2">El nombre debe tener solo caracteres de letras.</p>
+                </div>
+                <div class="mb-3 grupo__all" id="grupo__apellido">
+                    <label class="form-label label-nombre" for="apellido">Apellidos</label>
+                    <input class="form-control" type="text" id="apellido" name="apellidos"
+                        placeholder="Ingrese su apellido paterno y materno" required>
+                    <p class="form-control__error-txt d-none mt-2">Los apellidos deben tener solo caracteres de letras.</p>
+                </div>
+                <div class="mb-3 grupo__all" id="grupo__correo">
+                    <label class="form-label label-nombre" for="email">Correo electrónico</label>
+                    <input class="form-control" type="email" id="correo" name="correo" placeholder="Ingrese su Correo electrónico" required>
+                    <p class="form-control__error-txt d-none mt-2">El correo solo puede contener letras, números, puntos, guiones y guion bajo.</p>
+                </div>
+                
+                <div class="mb-3 grupo__all" id="grupo__user">
+                    <label class="form-label label-nombre"for="user">Usuario</label>
+                    <input class="form-control" type="text" id="user" name="user" placeholder="Crea tu nombre de usuario"
+                        required>
+                    <p class="form-control__error-txt d-none mt-2">El usuario debe tener de 4 a 16 dígitos y solo puede contener números, letras y guion bajo.</p>
+                </div>
+                <div class="mb-3 grupo__all" id="grupo__pass">
+                    <label class="form-label label-nombre" for="pass">Contraseña</label>
+                    <input type="password" id="pass" name="pass" required class="form-control">
+                    <p class="form-control__error-txt d-none mt-2">La contraseña tiene que ser de 4 a 12 dígitos con al menos una mayúscula y un número.</p>
+                </div>
+                <div class="mb-3 grupo__all" id="grupo__verificacionPass">
+                    <label class="form-label label-nombre" for="verificacionPass">Repita su contraseña</label>
+                    <input type="password" id="verificacionPass" name="verificacionPass" required
+                        class="form-control">
+                    <p class="form-control__error-txt d-none mt-2">Ambas contraseñas deben ser iguales</p>
+                </div>
+
+
+                <div class="formulario__mensaje-error d-none" id="formulario__mensaje-error">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+                
+                <button type="reset" class="btn btn-danger mb-3" id="resetForm">Limpiar</button>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="boton-enviar btn btn-primary" id="btnEnviar">Enviar</button>
+                    <p class="formulario__mensaje-exito d-none" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+<script>
+    var error_message = "{{ error_message|escapejs }}";
+    if (error_message) {
+        $(document).ready(function () {
+            $('#error_message').text(error_message);
+            $('#errorModal').modal('show');
+        });
+    }
+</script>
+<script src="{% static 'StoreGames/js/validaciones.js' %}"></script>
+</body>
+</html>

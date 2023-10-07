@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Cargo static de py-->
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gracias por visitarnos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'StoreGames/css/style.css' %}">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <div class="container text-center">
+        <h3 class="mensajesalida">Muchas gracias por visitarnos</h3>
+        <h3 class="mensajesalida" style="margin-top: 90px;">Redirigiendo al inicio....</h3>
+    </div>
+    
+  
+    
+    
+    
+
+    <script>
+    setTimeout(function () {
+     window.location.href = "{% url 'index' %}";
+    }, 3000); // 3000 (3 segundos)
+    </script>
+
+
+
+
+</body>
+</html>
+
+
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+

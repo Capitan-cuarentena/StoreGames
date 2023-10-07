@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40400%3B500&display=swap%27%29%3B);
+body{
+    background-image: url('../img/Backgraund.jpg');
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box-area{
+    width: 930px;
+}
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+/* Esto es el header */
+.custom-navbar-bg {
+    background-color: rgb(0, 0, 0); 
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin:0;
+    text-decoration: none;
+    color: #ff5e00;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-text-stroke: 2px #ff5e00;
+}
+
+
+nav .navbar-nav .nav-item a.registro {
+    text-decoration: none; 
+    color: #ff5e00;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}

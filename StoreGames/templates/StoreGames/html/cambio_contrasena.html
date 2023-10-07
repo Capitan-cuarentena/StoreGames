@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STOREGAMES | Cambiar Contraseña</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'StoreGames/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'StoreGames/css/style_usuario.css' %}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar-bg">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <h1 class="logo">Store Games</h1>
+        </a>
+        <!-- Botón para dispositivos pequeños -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Contenido del Navbar -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link registro" href="{% url 'aventura' %}">Aventura</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link registro" href="{% url 'shooter' %}">Shooter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link registro" href="{% url 'carreras' %}">Carreras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link registro" href="{% url 'deportes' %}">Deportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link registro" href="{% url 'rol' %}">Rol</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                    <p class="pt-2 nombre-usuario h6">Bienvenido, {{ user.username }}</p>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link registro" href="{% url 'editarperfil' %}">Editar Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link registro" href="{% url 'cambio_contra' %}">Cambio de Contraseña</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link registro" href="{% url 'logout' %}">Cerrar sesión</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link registro" href="{% url 'login' %}">Inicio de Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link registro" href="{% url 'registro' %}">Registro</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="my-5 txtperfil">
+                <h3>Cambio de Contraseña</h3>
+                <hr>
+            </div>
+            <!-- Formulario de Cambio de Contraseña -->
+            <form method="post" action="{% url 'cambiar_contrasena' %}">
+                {% csrf_token %}
+                <!-- Contenido del formulario de Cambio de Contraseña -->
+                <div class="row mb-5 gx-md-5 ">
+                    <div class="col-md-4">
+                        <div class="bg-secondary-soft px-4 py-5 pt-4 rounded">
+                       
+                            <div class="mb-3">
+                                <label class="form-label label-nombre">Contraseña antigua</label>
+                                <input type="password" class="form-control" name="contrasena_antigua">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label label-nombre">Nueva Contraseña</label>
+                                <input type="password" class="form-control" name="nueva_contrasena">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label label-nombre">Confirme Contraseña</label>
+                                <input type="password" class="form-control" name="verificacion_contrasena">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gap-3 d-md-flex justify-content-md-end text-center">
+                    <button type="submit" class="btn btn-primary btn-lg boton-enviar">Actualizar Contraseña</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Error -->
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="errorModalLabel">Error</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="error_message"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts y otros elementos al final del cuerpo del HTML -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+<script>
+    var error_message = "{{ error_message|escapejs }}";
+    if (error_message) {
+        $(document).ready(function () {
+            $('#error_message').text(error_message);
+            $('#errorModal').modal('show');
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+
+body {
+    background-image: url('../img/Backgraund.jpg');
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.card-custom {
+    background-color: black;
+    color: white;
+    }
+
+
+
+
+.custom-navbar-bg {
+    background-color: rgb(0, 0, 0); 
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin:0;
+    text-decoration: none;
+    color: #ff5e00;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-text-stroke: 2px #ff5e00;
+}
+
+
+nav .navbar-nav .nav-item a.registro {
+    text-decoration: none; 
+    color: #ff5e00;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.txt {
+    color: rgb(0, 255, 64);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(0, 255, 64);
+}
+
+.txtaventura {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(255, 0, 0);
+}
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+}
+
+.textopequeno {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+}
+
+.txtcarrito {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 300%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+   
+}
+
+.txtcarrera {
+    color: rgb(255, 0, 106);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(255, 0, 106);
+}
+
+.txtdeporte {
+    color: rgb(255, 153, 0);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(255, 153, 0);
+}
+
+.txtrol {
+    color: rgb(0, 204, 255);
+    text-align: center;
+    font-size: 400%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(0, 204, 255);
+}
+
+h2 {
+    color: rgb(255, 94, 0);
+    font-size: 70px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 3px rgb(255, 94, 0);
+}
+
+.color {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    margin: 20px 0; 
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+.centrado {
+    text-align: center;
+}
+
+
+.admin-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.info-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.info-box h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.info-box p {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+.nombre-usuario {
+    font-weight: bold; 
+    color: #ede5d7;
+  
+}
+
+
+.boton {
+    display: inline-block;
+    width: 130px;
+    padding: 10px;
+    background-color: rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    margin: 10px; 
+    -webkit-text-stroke: 1.5px #000000;
+}
+
+.boton_volver {
+    display: inline-block;
+    width: 110px;
+    padding: 10px;
+    background-color: rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    -webkit-text-stroke: 1.5px #000000;
+}
+
+
+
+.games{
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameSpacing{
+    margin-right: 30px;
+}
+
+img{
+    width: auto;
+    height: 250px;
+}
+
+.gametxt {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 24px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px 0; 
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-align: justify;
+}
+
+.mensajesalida {
+    font-size: 24px; 
+    color: #fff5f0;
+    position: absolute;
+    top: 50%; /* Alinea la parte superior del elemento al 50% del contenedor padre */
+    left: 50%; /* Alinea la izquierda del elemento al 50% del contenedor padre */
+    transform: translate(-50%, -50%); /* Centra el elemento en ambas direcciones */
+}
+
+
+.form-control {
+    font-size: 28px; 
+}
+
+.form-control:focus{
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.formulario__grupo-incorrecto .form-control{
+    border: 2px solid red !important;
+}
+
+.formulario__grupo-correcto .form-control{
+    border: 2px solid green !important;
+}
+
+.formulario__grupo-incorrecto .form-control__error-txt{
+    font-size: 16px;
+    color: red;
+    font-weight: 600;
+}
+
+.label-nombre {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    -webkit-text-stroke: 1px rgb(253, 253, 253);
+}
+
+.boton-enviar {
+    font-size: 25px; 
+    padding: 10px 20px; 
+}
+
+
+.input-ancho {
+    width: 30%;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.formulario__mensaje-exito{
+    font-size: 16px;
+    color: green;
+    font-weight: 600;
+}
+
+.formulario__mensaje-error{
+    font-size: 16px;
+    color: red;
+    font-weight: 600;
+}
+
+.txtregistro{
+font-size: 30px;
+color: #ffa700;
+}
+
+
+
+.carousel-inner .carousel-item .col img {
+    width: 100%; 
+    transition: 0.5s ease; 
+  }
+  
+
+  .carousel-inner .carousel-item .col img:hover {
+    cursor: crosshair; 
+    transform: scale(1.2); 
+    opacity: 1; 
+    filter: contrast(120%); 
+  }

@@ -1,0 +1,35 @@
+.form-control {
+    font-size: 28px; 
+}
+
+.form-control:focus{
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+
+.label-nombre {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    -webkit-text-stroke: 1px rgb(253, 253, 253);
+}
+
+.boton-enviar {
+    font-size: 25px; 
+    padding: 10px 20px; 
+}
+
+
+.input-ancho {
+    width: 30%;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.txtperfil{
+font-size: 30px;
+color: #ffa700;
+}
+
+
